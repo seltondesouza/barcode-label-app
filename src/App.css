@@ -616,7 +616,7 @@ body {
 .label-barcode-svg {
   width: 100%;
   height: auto;
-  max-height: 180px;
+  max-height: 90px;  /* 50% smaller */
   display: block;
 }
 
@@ -745,8 +745,8 @@ body {
 
   .label-barcode-svg {
     width: 100%;
-    height: 55mm !important;
-    max-height: 55mm !important;
+    height: 27.5mm !important;  /* 50% smaller */
+    max-height: 27.5mm !important;
   }
 
   .label-barcode-digits {
