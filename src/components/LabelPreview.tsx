@@ -19,8 +19,8 @@ export default function LabelPreview({ barcodeNumber, refNumber }: Props) {
         format: 'CODE128',
         lineColor: '#000000',
         background: '#ffffff',
-        width: 3,           // bar width in px (thicker = more scannable at distance)
-        height: 130,        // bar height in px – tall for easy scanning
+        width: 1.5,         // bar width in px (50% smaller)
+        height: 65,         // bar height in px – 50% smaller
         displayValue: false, // we render digits ourselves below
         margin: 0,
         valid: () => {
