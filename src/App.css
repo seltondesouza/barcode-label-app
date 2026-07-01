@@ -589,7 +589,7 @@ body {
 
 .label-ref-number {
   font-family: var(--font-mono);
-  font-size: 4.5rem;
+  font-size: 9rem;  /* doubled from 4.5rem */
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #000;
@@ -669,7 +669,7 @@ body {
   }
 
   .label-ref-number {
-    font-size: 2rem;
+    font-size: 4rem;  /* doubled from 2rem */
   }
 }
 
@@ -730,7 +730,7 @@ body {
   }
 
   .label-ref-number {
-    font-size: 42pt;
+    font-size: 84pt;  /* doubled from 42pt */
   }
 
   .label-ref-tag {
