@@ -537,12 +537,12 @@ body {
   max-width: 700px;
   aspect-ratio: 210 / 148.5; /* Matches half A4 proportions */
   border-radius: var(--radius-md);
-  padding: 24px 0;
+  padding: 20px 28px;          /* horizontal padding so content doesn't touch edges */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   overflow: hidden;
   border: 1px solid #d0d0d0;
   box-shadow: 0 8px 40px rgba(0,0,0,0.12);
@@ -563,14 +563,15 @@ body {
 
 .label-ref-center {
   display: flex;
-  align-items: baseline;
+  align-items: center;   /* vertically center REF badge with the number */
   justify-content: center;
-  gap: 16px;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .label-qr-code {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   flex-shrink: 0;
 }
 
@@ -589,9 +590,9 @@ body {
 
 .label-ref-number {
   font-family: var(--font-mono);
-  font-size: 9rem;  /* doubled from 4.5rem */
+  font-size: 6rem;   /* large & prominent — fits within label with padding */
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   color: #000;
   line-height: 1;
 }
@@ -669,7 +670,7 @@ body {
   }
 
   .label-ref-number {
-    font-size: 4rem;  /* doubled from 2rem */
+    font-size: 3.5rem;  /* scaled for narrow screens */
   }
 }
 
@@ -721,8 +722,8 @@ body {
     border: none !important;
     box-shadow: none !important;
     border-radius: 0 !important;
-    padding: 8mm 0 !important;
-    gap: 8mm;
+    padding: 6mm 14mm !important;  /* proper side padding for print */
+    gap: 6mm;
     animation: none !important;
     page-break-inside: avoid;
     overflow: hidden;
@@ -730,7 +731,7 @@ body {
   }
 
   .label-ref-number {
-    font-size: 84pt;  /* doubled from 42pt */
+    font-size: 56pt;  /* large but fits on A4 with padding */
   }
 
   .label-ref-tag {
@@ -739,8 +740,8 @@ body {
   }
 
   .label-qr-code {
-    width: 26mm;
-    height: 26mm;
+    width: 22mm;
+    height: 22mm;
   }
 
   .label-barcode-svg {
